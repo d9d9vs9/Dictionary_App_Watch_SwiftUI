@@ -1,1 +1,1 @@
-# Dictionary_App_Watch_SwiftUI
+# Dictionary App Watch SwiftUI
