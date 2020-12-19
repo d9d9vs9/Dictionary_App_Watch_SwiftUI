@@ -19,6 +19,15 @@
 		225906A9258E480A0083A3B0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225906A8258E480A0083A3B0 /* ComplicationController.swift */; };
 		225906AB258E480B0083A3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225906AA258E480B0083A3B0 /* Assets.xcassets */; };
 		225906AE258E480B0083A3B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225906AD258E480B0083A3B0 /* Preview Assets.xcassets */; };
+		225906D4258E4B9E0083A3B0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225906D3258E4B9E0083A3B0 /* RootView.swift */; };
+		225906DB258E4C650083A3B0 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225906DA258E4C650083A3B0 /* WordModel.swift */; };
+		225906E2258E4C8B0083A3B0 /* WordListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225906E1258E4C8B0083A3B0 /* WordListDataModel.swift */; };
+		225906E8258E4CA80083A3B0 /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225906E7258E4CA80083A3B0 /* WordListView.swift */; };
+		225906F1258E4CF20083A3B0 /* WordListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225906F0258E4CF20083A3B0 /* WordListPresenter.swift */; };
+		225906F7258E4D280083A3B0 /* WordListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225906F6258E4D280083A3B0 /* WordListInteractor.swift */; };
+		22590700258E4D6B0083A3B0 /* WordListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225906FF258E4D6B0083A3B0 /* WordListRouter.swift */; };
+		22590709258E4D950083A3B0 /* WordListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22590708258E4D950083A3B0 /* WordListModule.swift */; };
+		22590715258E4DF70083A3B0 /* WordListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22590714258E4DF70083A3B0 /* WordListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +89,15 @@
 		225906AD258E480B0083A3B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		225906AF258E480B0083A3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		225906B0258E480B0083A3B0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		225906D3258E4B9E0083A3B0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		225906DA258E4C650083A3B0 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		225906E1258E4C8B0083A3B0 /* WordListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListDataModel.swift; sourceTree = "<group>"; };
+		225906E7258E4CA80083A3B0 /* WordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListView.swift; sourceTree = "<group>"; };
+		225906F0258E4CF20083A3B0 /* WordListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListPresenter.swift; sourceTree = "<group>"; };
+		225906F6258E4D280083A3B0 /* WordListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListInteractor.swift; sourceTree = "<group>"; };
+		225906FF258E4D6B0083A3B0 /* WordListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListRouter.swift; sourceTree = "<group>"; };
+		22590708258E4D950083A3B0 /* WordListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListModule.swift; sourceTree = "<group>"; };
+		22590714258E4DF70083A3B0 /* WordListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +133,9 @@
 		2259068E258E48070083A3B0 /* MyDictionary WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				225906D9258E4C570083A3B0 /* Models */,
+				225906D8258E4BD50083A3B0 /* Modules */,
+				225906D2258E4B8F0083A3B0 /* Utilites */,
 				225906C7258E4AFC0083A3B0 /* Resources */,
 			);
 			path = "MyDictionary WatchKit App";
@@ -177,6 +198,108 @@
 				22590694258E480A0083A3B0 /* Info.plist */,
 			);
 			path = InfoPlist;
+			sourceTree = "<group>";
+		};
+		225906D1258E4B8A0083A3B0 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				225906D3258E4B9E0083A3B0 /* RootView.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		225906D2258E4B8F0083A3B0 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				225906D1258E4B8A0083A3B0 /* RootView */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		225906D8258E4BD50083A3B0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				225906DF258E4C7D0083A3B0 /* WordList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		225906D9258E4C570083A3B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				225906DA258E4C650083A3B0 /* WordModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		225906DF258E4C7D0083A3B0 /* WordList */ = {
+			isa = PBXGroup;
+			children = (
+				22590713258E4DF20083A3B0 /* Cells */,
+				22590707258E4D8E0083A3B0 /* Module */,
+				225906FE258E4D650083A3B0 /* Router */,
+				225906F5258E4D1E0083A3B0 /* Interactor */,
+				225906EF258E4CE30083A3B0 /* Presenter */,
+				225906E6258E4CA20083A3B0 /* View */,
+				225906E0258E4C820083A3B0 /* DataModel */,
+			);
+			path = WordList;
+			sourceTree = "<group>";
+		};
+		225906E0258E4C820083A3B0 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				225906E1258E4C8B0083A3B0 /* WordListDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		225906E6258E4CA20083A3B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				225906E7258E4CA80083A3B0 /* WordListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		225906EF258E4CE30083A3B0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				225906F0258E4CF20083A3B0 /* WordListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		225906F5258E4D1E0083A3B0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				225906F6258E4D280083A3B0 /* WordListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		225906FE258E4D650083A3B0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				225906FF258E4D6B0083A3B0 /* WordListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		22590707258E4D8E0083A3B0 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				22590708258E4D950083A3B0 /* WordListModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		22590713258E4DF20083A3B0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				22590714258E4DF70083A3B0 /* WordListCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,12 +429,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22590715258E4DF70083A3B0 /* WordListCell.swift in Sources */,
+				225906E2258E4C8B0083A3B0 /* WordListDataModel.swift in Sources */,
 				225906A1258E480A0083A3B0 /* ContentView.swift in Sources */,
 				2259069F258E480A0083A3B0 /* HostingController.swift in Sources */,
 				225906A5258E480A0083A3B0 /* NotificationController.swift in Sources */,
 				225906A3258E480A0083A3B0 /* ExtensionDelegate.swift in Sources */,
+				225906D4258E4B9E0083A3B0 /* RootView.swift in Sources */,
+				225906E8258E4CA80083A3B0 /* WordListView.swift in Sources */,
 				225906A7258E480A0083A3B0 /* NotificationView.swift in Sources */,
 				225906A9258E480A0083A3B0 /* ComplicationController.swift in Sources */,
+				225906F1258E4CF20083A3B0 /* WordListPresenter.swift in Sources */,
+				225906F7258E4D280083A3B0 /* WordListInteractor.swift in Sources */,
+				22590709258E4D950083A3B0 /* WordListModule.swift in Sources */,
+				22590700258E4D6B0083A3B0 /* WordListRouter.swift in Sources */,
+				225906DB258E4C650083A3B0 /* WordModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +610,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -502,7 +634,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -522,7 +654,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -542,7 +674,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
